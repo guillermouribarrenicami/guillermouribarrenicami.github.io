@@ -25,11 +25,35 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    width: 400px;
+    width: 480px;
     height: 280px;
-    background-image: url('img/fondo.png');
+    background-image: url('img/fondo_480.jpg');
     background-size: cover;
     background-position: center;
+}
+
+/* Media query for standard monitors */
+@media screen and (min-width: 768px) {
+    .footer-background {
+        width: 720px;
+        background-image: url('img/fondo_720.jpg');
+    }
+}
+
+/* Media query for large monitors */
+@media screen and (min-width: 1200px) {
+    .footer-background {
+        width: 1080px;
+        background-image: url('img/fondo_1080.jpg');
+    }
+}
+
+/* Media query for large monitors */
+@media screen and (min-width: 1920px) {
+    .footer-background {
+        width: 1800px;
+        background-image: url('img/fondo_1920.jpg');
+    }
 }
 
 .footer-icons {
